@@ -60,7 +60,7 @@
 // var name;
 //
 // console.log(name);
-
+//
 // STRINGS
 
 // console.log("Richard's very hungry"); //string literal

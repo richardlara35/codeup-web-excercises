@@ -12,7 +12,7 @@ var maybeNum2 = "5";
 // if (num1 == maybeNum2){
 //     console.log("These are equivalent");
 // }
-
+//
 //STRICT EQUALITY (===)
 //STRICT INEQUALITY (!==)
 // The comparators MUST be of the same data type AND have the same value.
