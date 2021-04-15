@@ -60,7 +60,7 @@ var isMyDog;
 // if (hasRequiredScoreOrCash && hasAdequateLengthOfEmployment){
 //     console.log("You get a car!");
 // }
-//
+
 
 // LOGICAL NOT (!)
 

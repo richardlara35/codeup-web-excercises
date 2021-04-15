@@ -20,7 +20,7 @@
 // }   else{
 //     console.log("Alight, be like that...");
 // }
-//
+
 // PROMPT
 
 // var userInput = prompt('What is your favorite movie?').toUpperCase();
