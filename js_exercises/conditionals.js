@@ -161,18 +161,28 @@ console.log("Your total today is $" + calculateTotal(luckyNumber, 100));
      * HINT: The way we prompt for a value could be improved
      */
 
-    // function numberStuff(num) {
-    //     var choose = (confirm("Would you like to enter a number?"));
-    //     if (choose === true){
-    //         num = (prompt("What number are you thinking of?"));
-    //         var evenOrOdd = num % 2;
-    //
-    //
-    //     }
-    //
-    //
-    //
-    //
-    // }
-    // numberStuff();
+    function numberStuff() {
+        var choose = (confirm("Would you like to enter a number?"));
+        if (choose === true) {
+            var num = (prompt("What number are you thinking of?"));
+            if (isNaN(num) === true){
+                alert("That is not an number! Refresh & Try again")
+            }else {
+                if (num % 2 == 0) {
+                    alert("Your number is even!");
+                } else {
+                    alert("Your number is odd!");
+                }
+                alert("Your number +100 is: " + (parseInt(num, 10) + 100));
+                if (num > 0) {
+                    alert("Your number is positive!");
+                } else if(num<0){
+                    alert("Your number is negative!");
+                }else{
+                    alert("Your number is neither positive nor negative!")
+                }
+            }
+        }
+    }
+    numberStuff();
 })()
