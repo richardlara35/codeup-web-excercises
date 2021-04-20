@@ -26,77 +26,49 @@
     var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
     var randomColor = colors[Math.floor(Math.random() * colors.length)];
 
-    function analyzeColor(color) {
-        if (color === "red"){
-            console.log("Apples are red");
-        }else if(color === "orange"){
-            console.log("Orange you glad I didn't say banana")
-        }else if(color === "yellow"){
-            console.log("Mello Yellow");
-        }else if(color === "green"){
-            console.log("Mean Green fighting machine");
-        }else if(color === "blue"){
-            console.log("I'm feeling blue today");
-        }else if(color === "indigo"){
-            console.log("I got nothing for indigo");
-        }else if(color === "violet"){
-            console.log("Isn't violet just fancy purple?");
-        }else{
-            console.log("Uhhh that's not a color");
-        }
-
-
-    }
+    // function analyzeColor(color) {
+    //     if (color === "red"){
+    //         console.log("Apples are red");
+    //     }else if(color === "blue"){
+    //         console.log("I feel blue today")
+    //     }else{
+    //         console.log("Idk anything about " + color);
+    //     }
+    // }
 
     /**
      * TODO:
      * Pass the `randomColor` variable to your function and console.log the results.
      * You should see a different message every time you refresh the page
      */
-    analyzeColor(randomColor);
+    // analyzeColor(randomColor);
     /**
      * TODO:
      * Refactor your above function to use a switch-case statement
      */
- function analyzeColorAgain(color){
-     switch(color){
-
-         case "red":
-             console.log("Apples are red");
-             break;
-         case "orange":
-             console.log("Orange you glad I didn't say banana");
-             break;
-         case "yellow":
-             console.log("Yellow Submarine");
-             break;
-         case "green":
-             console.log("Mean green fighting machine");
-             break;
-         case "blue":
-             console.log("I'm feeling blue today");
-             break;
-         case "indigo":
-             console.log("I got nothing for indigo");
-             break;
-         case "violet":
-             console.log("Isn't violet just a fancy purple?");
-             break;
-         default:
-             console.log("Uhhh that's not a color I'm familiar with.");
-
-     }
-    }
-    analyzeColorAgain(randomColor);
+ // function analyzeColorAgain(color){
+ //     switch(color){
+ //
+ //         case "red":
+ //             console.log("Apples are red");
+ //             break;
+ //         case "blue":
+ //             console.log("I'm feeling blue today");
+ //             break;
+ //         default:
+ //             console.log("Idk anything about " + color);
+ //     }
+ //    }
+ //    analyzeColorAgain(randomColor);
     /**
      * TODO:
      * Prompt the user for a color when the page loads, and pass the input from the
      * user to your `analyzeColor` function. Alert the return value from your
      * function to show it to the user.
      */
-//     var myColor = (prompt("What is your favorite color?"));
-//
-// analyzeColor(myColor);
+    // var myColor = (prompt("What is your favorite color?"));
+
+    // analyzeColor(myColor);
     /**
      * TODO:
      * Suppose there's a promotion in Walmart, each customer is given a randomly
@@ -118,22 +90,23 @@
      */
 function calculateTotal(num, total){
     if(num === 0){
-        return total - (total / 0);
+        console.log("Your total is $" + total);
     }else if(num === 1){
-       return total - (total * 0.10);
+        console.log("Your total is $" + total * 0.90);
     }else if(num === 2){
-        return total - (total * 0.25);
+        console.log("Your total is $" + total * 0.75);
     }else if(num === 3){
-        return total - (total * 0.35);
+        console.log("Your total is $" + total * 0.65);
     }else if(num === 4){
-       return total - (total * 0.50);
+        console.log("Your total is $" + total * 0.50);
     }else if(num === 5){
-         return total * 0;
+        console.log("Your total is $" + 0);
     }else{
-    console.log("Uhhh pick another number");
+    console.log("Uhhh idk that number");
     }
     }
-    console.log("Your total today is $" + calculateTotal(5, 100));
+    calculateTotal(2,200);
+    // console.log("Your total today is $" + calculateTotal(5, 100));
     /**
      * TODO:
      * Uncomment the line below to generate a random number between 0 and 6.
@@ -143,7 +116,9 @@ function calculateTotal(num, total){
      */
 // Generate a random number between 0 and 6
 var luckyNumber = Math.floor(Math.random() * 6);
-console.log("Your total today is $" + calculateTotal(luckyNumber, 100));
+console.log(luckyNumber);
+
+calculateTotal(luckyNumber, 100);
     /**
      * TODO:
      * Write some JavaScript that uses a `confirm` dialog to ask the user if they
