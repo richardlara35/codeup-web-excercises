@@ -154,7 +154,7 @@ calculateTotal(luckyNumber, 100);
                 } else if(num<0){
                     alert("Your number is negative!");
                 }else{
-                    alert("Your number is neither positive nor negative!")
+                    alert("Your number is neither positive nor negative!");
                 }
             }
         }
