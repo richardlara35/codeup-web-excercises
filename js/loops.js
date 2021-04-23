@@ -38,19 +38,45 @@
 //  is now full" to the console.
 // // HINT: think of a countdown, remember if statements can be used inside of your statements
 
-    var spacesLeft = 30;
-    var car = 2;
-    do{
-        console.log('There are ' + spacesLeft + ' parking spaces available');
-        spacesLeft -=2;
-        console.log('There are now ' + spacesLeft + ' parking spaces available');
-        console.log('<------------>');
+    // var spacesLeft = 30;
+    // var car = 2;
+    // do{
+    //     console.log('There are ' + spacesLeft + ' parking spaces available');
+    //     spacesLeft -=2;
+    //     console.log('There are now ' + spacesLeft + ' parking spaces available');
+    //     console.log('<------------>');
+    //
+    // }while(spacesLeft > 0);
+    //
+    // console.log("Sorry the lot is full")
 
-    }while(spacesLeft > 0);
+//FOR LOOPS MINI EXERCISE---------------
+// TODO: Loop through a set of numbers (0-30), if the number you're currently at is even, add 2 to it. If it's an
+//  odd number, print "odd"
+// // HINT: remember the remainder operator (modulo)
 
-    console.log("Sorry the lot is full")
-
-
-
+    // for(let i = 0; i <= 30; i++){
+    //     console.log("Count is at " + i);
+    //     if(i % 2 == 0){
+    //         i +=2;
+    //         console.log("Count plus 2 is now " + i);
+    //     }else{
+    //         console.log(i + " is odd")
+    //     }
+    // }
+// // TODO: loop through numbers 1 - 40. Print "marco" if it's divisible by 3. Print "polo" if it's divisible by 5.
+//  If it's neither print "I'm not playing"
+//  Print "marco polo" if it's divisible by 3 and 5.
+    for(let i = 1; i <= 40; i++){
+        if(i % 3 == 0 && i % 5 == 0){
+            console.log("Yahtzee!...." + i);
+        }else if(i % 5 == 0){
+            console.log("Polo...." + i);
+        }else if(i % 3 == 0){
+            console.log("Marco...." + i);
+        }else{
+            console.log("I'm not playing...." + i);
+        }
+    }
 
 })()
