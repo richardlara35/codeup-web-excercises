@@ -26,7 +26,7 @@
 // clients. Use a do-while loop to log to the console the amount of cones sold to each person. This is a way get the
 // random numbers for this exerciseS
 //  This is how you get a random number between 50 and 100
-var allCones = Math.floor(Math.random() * 50) + 50;
+
 //  This expression will generate a random number between 1 and 5
 
 // The output should be similar to the following:
@@ -35,20 +35,34 @@ var allCones = Math.floor(Math.random() * 50) + 50;
 // Cannot sell you 6 cones I only have 3...  // If there are not enough cones
 // Yay! I sold them all! // If there are no more cones
 
-//     console.log("I have " + allCones + " ice cream cones to sell today");
-//
-// do{
-//     var sold = Math.floor(Math.random() * 5) + 1;
-//     if(allCones - sold >= 0) {
-//         console.log("I sold " + sold + " ice cream cones!");
-//         allCones -= sold;
-//         console.log("There are now " + allCones + " left");
-//     }else{
-//         console.log("I can't sell you " + sold + " cones, I only have " + allCones + " left");
-//     }
-// }while(allCones !== 0)
-//
-// console.log("I sold all my cones!");
+
+
+    function startingCones(){
+        return Math.floor(Math.random() * 50) + 50;
+    }
+
+  function wantedCones(){
+     return Math.floor(Math.random() * 5) + 1;
+  }
+
+
+function sellIceCreamCones(conesToSell){
+    do{
+        var sold = wantedCones();
+        if(conesToSell - sold >= 0) {
+            console.log("I sold " + sold + " ice cream cones!");
+            conesToSell -= sold;
+            console.log("There are now " + conesToSell + " left");
+        }else{
+            console.log("I can't sell you " + sold + " cones, I only have " + conesToSell + " left");
+        }
+    }while(conesToSell !== 0)
+
+    console.log("I sold all my cones!");
+}
+sellIceCreamCones(startingCones());
+
+
 
 
 
