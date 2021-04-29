@@ -44,21 +44,22 @@
      * and console.log the relevant messages for each person
      */
 
-    var shoppers = [
-        {name: 'Cameron', amount: 180},
-        {name: 'Ryan', amount: 250},
-        {name: 'George', amount: 320}
-    ];
-
-shoppers.forEach(function ()){
-    if (shoppers.amount > 0){
-        console.log(`${shoppers.name} spent over $200 so they will receive a 12% discount
-        his total has gone from $${shoppers.amount} $${shoppers.amount * 0.88}`);
-    }else{
-        console.log(`${shoppers.name} spent less that $200 so they will not receive a discount, their total
-        is ${shoppers.amount}`);
-    }
-}
+//     var shoppers = [
+//         {name: 'Cameron', amount: 180},
+//         {name: 'Ryan', amount: 250},
+//         {name: 'George', amount: 320}
+//     ];
+//
+// shoppers.forEach(function(shopper,){
+//
+//     if (shopper.amount > 200){
+//         console.log(`${shopper.name} spent over $200 so they will receive a 12% discount.
+//         Their total has gone from $${shopper.amount} $${shopper.amount * 0.88}`);
+//     }else{
+//         console.log(`${shopper.name} spent less that $200 so they will not receive a discount.
+//         Their total is $${shopper.amount}`);
+//     }
+// })
 
 
 
@@ -77,6 +78,14 @@ shoppers.forEach(function ()){
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
+
+var books = [
+        {title: 'So Much Blue', firstName: 'Percival', lastName: 'Everett'},
+        {title: 'The Water Dancer', firstName: 'Ta-Nehisi', lastName: 'Coates'},
+        {title: 'Basketball and Other Things', firstName: 'Shea', lastName: ' Serrano'},
+        {title: 'Rebound', firstName: 'Kwame', lastName: ' Alexander'},
+        {title: 'Movies and Other Things', firstName: 'Shea', lastName: ' Serrano'}
+    ];
 
     /**
      * TODO:
@@ -102,6 +111,17 @@ shoppers.forEach(function ()){
      *      ---
      *      ...
      */
+    // books.forEach(function(book){
+    //     console.log(`Book # ${}`)
+    //     }
+    // )
+
+    for(var i = 0; books.length > i; i++){
+        console.log(`Book # ${i + 1}`);
+        console.log(`Title: ${books[i].title}`);
+        console.log(`Author: ${books[i].firstName} ${books[i].lastName}`)
+
+    }
 
     /**
      * Bonus:
