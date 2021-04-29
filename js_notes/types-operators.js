@@ -58,7 +58,6 @@
 // a variable/ object which is written but never assigned
 
 // var name;
-//
 // console.log(name);
 
 // STRINGS

@@ -158,6 +158,6 @@ calculateTotal(luckyNumber, 100);
                 }
             }
         }
-    }
+    };
     numberStuff();
 })()

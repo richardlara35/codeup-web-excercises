@@ -16,7 +16,7 @@
     // //<== each comma delimited value is called an "element"
     //
     // console.log(Array.isArray(myArr));
-
+    //
 
     // var myCharacteristics = ["Richard", "Software Engineer", "25"];
 

@@ -7,7 +7,7 @@
     /**
      * TODO:
      * Convert planetsString to an array, and save it in a variable named
-     * planetsArray.
+     * planetsArray
      * console.log planetsArray to check your work
      */
 

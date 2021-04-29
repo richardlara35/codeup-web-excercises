@@ -53,7 +53,7 @@
 //FOR LOOPS MINI EXERCISE---------------
 // TODO: Loop through a set of numbers (0-30), if the number you're currently at is even, add 2 to it. If it's an
 //  odd number, print "odd"
-// // HINT: remember the remainder operator (modulo)
+ // HINT: remember the remainder operator (modulo)
 
     // for(let i = 0; i <= 30; i++){
     //     console.log("Count is at " + i);

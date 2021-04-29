@@ -10,7 +10,7 @@
  //
  // showMultiplicationTable();
 
-//-------------------
+//---------------------
 
     // for(let i = 0; i <= 10; i++){
     //    var random = Math.floor(Math.random() * 180) + 20;

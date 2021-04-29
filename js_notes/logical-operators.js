@@ -15,7 +15,6 @@ var isMyDog;
 // if (hasWhiskers){
 //     isMyDog = true;
 // }
-//
 // if (nameisCoda){
 //     isMyDog = true;
 //     console.log("This must be my dog")

@@ -19,7 +19,6 @@
 // function subtract (num1, num2){
 //     return num1 - num2;
 // }
-//
 // console.log("The result of subtract() is: " + subtract(10, 6));
 
 //MINI EXERCISE

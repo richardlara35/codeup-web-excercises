@@ -18,7 +18,6 @@
 
 
         function greatEscape(){
-            //get all info
             var dogKind = whatKindOfDog();
             var contactInfo = getContactInfo();
             var dogName = getDogName();

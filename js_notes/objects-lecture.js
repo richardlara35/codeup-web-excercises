@@ -207,7 +207,7 @@ var zoo = {
         }
 
     ]
-}
+};
     console.log(zoo.animals[0].hearPandaSound());
     console.log(zoo.animals[1].hearCougarSound());
     console.log(zoo.animals[2].hearAlligatorSound());

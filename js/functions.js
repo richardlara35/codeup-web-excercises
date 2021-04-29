@@ -98,8 +98,7 @@
      */
 // var total = prompt("How much was your bill?");
 //
-// var tip = prompt("What percentage would you like to tip?");
-//
+// var tip = prompt("What percentage would you like to tip?");\
 //     alert("You should leave $" + calculateTip(tip, total) + " as a tip");
 
     /**

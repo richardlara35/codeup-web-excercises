@@ -139,7 +139,7 @@
 // console.log("I will be paying $" + pay);
 
 //--------------
-
+//
 // var google = 400
 //
 // var amazon = 380

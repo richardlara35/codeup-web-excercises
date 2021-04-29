@@ -13,8 +13,6 @@
 
 //CONFIRM
 // var userChoice = confirm("Would you like to continue?");
-//
-//
 // if (userChoice) {
 //     console.log("Let's continue");
 // }   else{

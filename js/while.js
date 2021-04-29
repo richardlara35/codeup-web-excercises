@@ -30,7 +30,6 @@
 //  This expression will generate a random number between 1 and 5
 
 // The output should be similar to the following:
-//
 // 5 cones sold...if there are enough cones
 // Cannot sell you 6 cones I only have 3...  // If there are not enough cones
 // Yay! I sold them all! // If there are no more cones

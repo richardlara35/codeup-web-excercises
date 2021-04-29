@@ -11,7 +11,7 @@ function choose(){
         }
 
     }
-}
+};
 
 for(let i = 1; i <= 50; i+= 2 ){
     console.log("Here is an odd number" + i);

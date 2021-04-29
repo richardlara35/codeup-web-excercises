@@ -15,7 +15,6 @@
 // console.log(name-= "Lara");
 
 // var daysRemainingInCohort = 114;
-//
 // daysRemainingInCohort -= 4;
 //
 // console.log(daysRemainingInCohort);
@@ -81,7 +80,7 @@
 
 // console.log(parseInt("12548118 what a number!"));
 // console.log(parseInt("YO 12548118 what a number!"));
-// console.log(parseInt("12548118 4151"));
+//console.log(parseInt("12548118 4151"));
 
 // Length
 
