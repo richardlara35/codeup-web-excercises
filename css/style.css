@@ -3,6 +3,44 @@ this file is named "style.css" and is in a directory named "css"
 */
 
 .fancy-header {
-    color: purple; /* single line comment */
+    color: darkseagreen; /* single line comment */
     text-decoration: underline;
+    text-align: center;
+}
+
+h2 {
+    color: lightseagreen;
+    text-decoration: underline;
+}
+
+body {
+    background-image: url("assets/background.jpeg") ;
+    background-size: 500px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-color: mintcream;
+
+}
+
+ul {
+    list-style: circle;
+}
+
+* {
+    font-family: "Apple SD Gothic Neo";
+}
+
+table, th, tr, td {
+    padding: 20px;
+    border: 1px solid black;
+}
+
+a:link{
+    color: lightseagreen;
+}
+
+a:visited {
+    color: darkseagreen;
 }
