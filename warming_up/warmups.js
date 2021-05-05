@@ -26,4 +26,17 @@
 
     console.log(cubeRoot(cube(5)));
 
+//-----------------------------Cinco De Mayo
+
+    function last(input){
+        return (input.slice(-1));
+    }
+
+    console.log(last("What it do"));
+    console.log(last("Warm Up!"))
+
+
+
+
+
 })()
