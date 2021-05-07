@@ -69,6 +69,9 @@ a {
 .btn-large {
     font-size: 1.3em;
     padding: 10px;
+    position: relative;
+    right: 5px;
+
 }
 .img-circle {
     border-radius: 100%;
@@ -94,22 +97,21 @@ a {
 }
 
 .timeline{
-    position: absolute;
-    right: 400px;
+    position: relative;
+    right: -248px;
     margin-right: .5em;
     margin-left: .5em;
     width: 50%;
-    top: 375px;
+    top: -178px;
 }
 
 .who-to-follow{
-    position: absolute;
-    right: 0px;
-    width: calc(25% - 1em);
+    position: relative;
+    left: 1570px;
     margin-right: .5em;
     margin-left: .5em;
     width: 25%;
-    top: 354px;
+    top: -596px;
 }
 
 .container{
@@ -143,8 +145,14 @@ a {
 }
 
 
-.class > .tweet-user{
+.tweet-user{
     position: relative;
     top: -76px;
+    right: -63px;
+}
+
+.tweet-sent{
+    position: relative;
+    top: -79px;
     right: -63px;
 }
