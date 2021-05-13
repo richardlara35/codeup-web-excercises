@@ -38,21 +38,27 @@
 
 //-------------------------------May 6th
 
-    function remainder(num, div) {
-        if (!isNaN(num) && !isNaN(div)) {
-            return num % div;
-        } else if (isNaN(num)) {
-            return (`Parameter ${num} is not a number`);
-        } else if (isNaN(div)) {
-            return (`Parameter ${div} is not a number`);
-        }
-        return ("Its all messed up here");
-    }
+    // function remainder(num, div) {
+    //     if (!isNaN(num) && !isNaN(div)) {
+    //         return num % div;
+    //     } else if (isNaN(num)) {
+    //         return (`Parameter ${num} is not a number`);
+    //     } else if (isNaN(div)) {
+    //         return (`Parameter ${div} is not a number`);
+    //     }
+    //     return ("Its all messed up here");
+    // }
+    //
+    // console.log(remainder(26,3));
+    // console.log(remainder("Banana",5));
+    // console.log(remainder(20,"Jello"));
+    // console.log(remainder("Banana","Jello"));
 
-    console.log(remainder(26,3));
-    console.log(remainder("Banana",5));
-    console.log(remainder(20,"Jello"));
-    console.log(remainder("Banana","Jello"));
+    //------------------------------May 13
+
+    for(let i = 1; i<= 5; i++){
+        console.log(" 🥸 ".repeat(i));
+    }
 
 
 
