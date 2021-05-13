@@ -1,0 +1,14 @@
+.jumbotron{
+    background-image: url("assets/pizza.png");
+}
+
+h1{
+    background: rgba(255, 255, 255, 0.53);
+    text-align: center;
+    color: rgba(0, 0, 0, 0.59);
+    width: 100%;
+}
+
+.tabs > a{
+    font-size:12px;
+}
