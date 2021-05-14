@@ -43,18 +43,20 @@
       </div>
 
       <ul class="nav nav-tabs">
-        <li class="tabs">
-          <a class="nav-link active" href="#"><span class="badge badge-secondary">1 </span> Size and Crust</a>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#size-crust"><span class="badge badge-secondary">1 </span> Size and Crust</a>
         </li>
-        <li class="tabs">
-          <a class="nav-link" href="#"> <span class="badge badge-secondary">2 </span> Cheese and Sauce</a>
+        <li class="nav-item">
+          <a href="#cheese" data-toggle="tab"><span class="badge badge-secondary">2 </span> Cheese and Sauce</a>
         </li>
-        <li class="tabs">
-          <a class="nav-link" href="#"><span class="badge badge-secondary">3 </span> Toppings</a>
+        <li class="nav-item">
+          <a href="#toppings" data-toggle="tab"><span class="badge badge-secondary">3 </span> Toppings</a>
         </li>
       </ul>
 
-      <div class="card size-crust" style="width: 100%;">
+      <div class="tab-content">
+        <div class="tab-pane fade in active"
+      <div class="card tab-pane fade in active" style="width: 100%;">
         <h6 class="card-title bg-primary text-light p-2">Choose size and crust </h6>
         <div class="card-body pt-1" >
           <div class="card list">
@@ -96,8 +98,11 @@
 
 
           </div>
-          <a href="#" class="btn btn-primary text-right border">Next Step</a>
         </div>
+      </div>
+
+      <a href="#" class="btn btn-primary text-right border">Next Step</a>
+
       </div>
 
 

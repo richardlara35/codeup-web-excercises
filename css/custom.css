@@ -12,3 +12,7 @@ h1{
 .tabs > a{
     font-size:12px;
 }
+
+.card {
+    margin-bottom: 1em;
+}
