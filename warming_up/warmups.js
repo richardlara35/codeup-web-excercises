@@ -56,12 +56,21 @@
 
     //------------------------------May 13
 
-    for(let i = 1; i<= 5; i++){
-        console.log(" 🥸 ".repeat(i));
+    // for(let i = 1; i<= 5; i++){
+    //     console.log(" 🥸 ".repeat(i));
+    // }
+
+//----------------------------------May17
+
+    //Write a function named secondToLast(arr) that returns the data type of the
+    // second to last element of the array
+    // parameter. When you call the function, pass in an array of your choosing
+
+    function secondToLast(arr){
+        console.log(arr[arr.length -2])
+        return typeof (arr[arr.length -2])
     }
 
-
-
-
+    console.log(secondToLast([100, 200, 300, "400", 500]));
 
 })()
