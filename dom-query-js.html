@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>DOM: Query and Modify</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 </head>
 <body>
 
@@ -24,33 +25,98 @@
     pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
     culpa qui officia deserunt mollit anim id est laborum.
 </p>
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <button type="button" id="change-header">Click Me!</button>
+            </div>
+            <div class="col-3">
+                <button type="button" id="subheader-color">Click Me!</button>
+            </div>
+            <div class="col-3">
+                <button type="button" id="list-color">Click Me!</button>
+            </div>
+            <div class="col-3">
+                <button type="button" id="text-change">Click Me!</button>
+            </div>
+        </div>
 
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 <script>
     (function() {
         "use strict";
-        // TODO: Uncomment next line and get the main header element by id
-        var mainHeader = document.getElementById('mainHeader') ;
 
-        // TODO: Set inner html of mainHeader to "JavaScript is Cool"
-        mainHeader.innerHTML = ('Javascript is Cool');
+        headerEvent();
 
-        // TODO: Uncomment the next line and get the sub header element by id
-        var subHeader = document.getElementById('sub-header') ;
+        function headerEvent(){
+            document.getElementById('change-header')
+            .addEventListener('click', jsCool)
+        }
 
-        // TODO: Set the text color of subHeader to blue
-        subHeader.setAttribute('class', 'text-primary');
 
-        // TODO: Uncomment the next line and get all list items
-        var listItems = document.getElementsByTagName('li');
+        function jsCool() {
+            var mainHeader = document.getElementById('main-header')
+            mainHeader.innerHTML = ('JavaScript is Cool');
+            return mainHeader
+        }
+//------------------------------------------------------------------
+        subHeaderColor();
 
-        // TODO: Set text color on every other list item to grey
+        function subHeaderColor() {
+            document.getElementById('subheader-color')
+            .addEventListener('click', subHeaderChanged);
+        }
 
-        // TODO: Set text color of li with dbid = 1 to blue
+        function subHeaderChanged() {
+            var subHeader = document.getElementById('sub-header')
+            subHeader.setAttribute('class', 'text-primary');
+            return subHeader
+        }
 
-        // TODO: Uncomment the next line and get all elements with class name sub-paragraph
-        // var subParagraphs = ;
+//------------------------------------------------------------------
+        clickListButton();
+        function clickListButton(){
+            document.getElementById('list-color')
+            .addEventListener('click', listColor);
+        }
 
-        // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
+        function listColor() {
+            var listItems = document.getElementsByTagName('li');
+            for (var i = 0; i < listItems.length; i++) {
+                var dbId = listItems[i].getAttribute("data-dbid");
+                if (i % 2 != 0) {
+                    listItems[i].setAttribute('class', 'text-secondary');
+                } else if (i == 0) {
+                    listItems[0].setAttribute('class', 'text-primary');
+                }
+            }
+
+        }
+
+        //------------------------------------------------------------------
+
+        subParagraphEvent();
+
+        function subParagraphEvent(){
+            document.getElementById('text-change')
+            .addEventListener('click', subParagraphText)
+        }
+
+            // listItems[0].setAttribute('class', 'text-primary');
+
+            var subParagraphs = document.getElementsByClassName('sub-paragraph');
+            console.log(subParagraphs)
+
+
+        function subParagraphText() {
+            var subParagraphs = document.getElementsByClassName('sub-paragraph');
+            // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
+            subParagraphs[0].innerHTML = ("Mission Accomplished!");
+
+        }
+
     })();
 </script>
 </body>
