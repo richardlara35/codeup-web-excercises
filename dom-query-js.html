@@ -28,16 +28,16 @@
     <div class="container">
         <div class="row">
             <div class="col-3">
-                <button type="button" id="change-header">Click Me!</button>
+
             </div>
             <div class="col-3">
-                <button type="button" id="subheader-color">Click Me!</button>
+
             </div>
             <div class="col-3">
-                <button type="button" id="list-color">Click Me!</button>
+
             </div>
             <div class="col-3">
-                <button type="button" id="text-change">Click Me!</button>
+
             </div>
         </div>
 
@@ -48,10 +48,46 @@
     (function() {
         "use strict";
 
+        var columns = document.getElementsByClassName('col-3');
+        // console.log(columns);
+
+        var btn1 = document.createElement("BUTTON");
+        btn1.innerHTML = "CLICK ME";
+        btn1.setAttribute('id', 'firstBtn');
+        btn1.setAttribute('class', 'btn btn-primary');
+        columns[0].appendChild(btn1);
+
+        var btn2 = document.createElement("BUTTON");
+        btn2.innerHTML = "CLICK ME";
+        btn2.setAttribute('id', 'secondBtn');
+        btn2.setAttribute('class', 'btn btn-success');
+        columns[1].appendChild(btn2);
+
+        var btn3 = document.createElement("BUTTON");
+        btn3.innerHTML = "CLICK ME";
+        btn3.setAttribute('id', 'thirdBtn');
+        btn3.setAttribute('class', 'btn btn-danger');
+        columns[2].appendChild(btn3);
+
+        var btn4 = document.createElement("BUTTON");
+        btn4.innerHTML = "CLICK ME";
+        btn4.setAttribute('id', 'fourthBtn');
+        btn4.setAttribute('class', 'btn btn-warning');
+        columns[3].appendChild(btn4);
+
+
+
+
+
+
+
+
+        //------------------------------------------------------
+
         headerEvent();
 
         function headerEvent(){
-            document.getElementById('change-header')
+            document.getElementById('firstBtn')
             .addEventListener('click', jsCool)
         }
 
@@ -65,7 +101,7 @@
         subHeaderColor();
 
         function subHeaderColor() {
-            document.getElementById('subheader-color')
+            document.getElementById('secondBtn')
             .addEventListener('click', subHeaderChanged);
         }
 
@@ -78,7 +114,7 @@
 //------------------------------------------------------------------
         clickListButton();
         function clickListButton(){
-            document.getElementById('list-color')
+            document.getElementById('thirdBtn')
             .addEventListener('click', listColor);
         }
 
@@ -100,7 +136,7 @@
         subParagraphEvent();
 
         function subParagraphEvent(){
-            document.getElementById('text-change')
+            document.getElementById('fourthBtn')
             .addEventListener('click', subParagraphText)
         }
 
