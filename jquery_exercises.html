@@ -15,7 +15,11 @@
                 Hola
             </h1>
             <p id="latin" class="codeup">
-                lorem
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                officia deserunt mollit anim id est laborum."
             </p>
             <ul id="list-id" class="">
                 <h2>List</h2>
@@ -31,13 +35,28 @@
             // $(document).ready(function () {
             //     alert('The DOM has finished loading!');
             // });
-            var contents = $('h1').html();
-            alert(contents);
+            // var contents = $('h1').html();
+            // alert(contents);
+            // //
+            // // $(".codeup").css('border', '1px solid red');
             //
-            // $(".codeup").css('border', '1px solid red');
+            // $("li").css('font-size', '20px' );
+            // $("h1, p, li").css('background-color', 'yellow');
 
-            $("li").css('font-size', '20px' );
-            $("h1, p, li").css('background-color', 'yellow');
+            $('h1').click(function() {
+                $('h1').css('background-color', 'green');
+            });
+            $('p').dblclick(function() {
+               $('p').css('font-size', '18px');
+            });
+            $('li').hover(
+                function() {
+                    $(this).css('color', 'red');
+                },
+                function() {
+                    $(this).css('color', 'black');
+                }
+            );
 
 
         </script>
