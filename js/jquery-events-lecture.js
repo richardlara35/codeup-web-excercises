@@ -16,27 +16,32 @@
         addListeners();
     });
     //parent method for adding all listeners
+
+        addListeners();
+
+    //parent method for adding all listeners
     function addListeners(){
         //get the elements to add listener and change image
         let cardContainers = Array.from(document.querySelectorAll(".col-md-3"));
-        addEvents(cardContainers, 'assets/jazz-music-rubber-duck.jpg', 'mouseover');
-        addEvents(cardContainers, 'assets/question.png', 'mouseout');
+        addEvents(cardContainers, 'js/assets/jazz-music-rubber-duck.jpg', 'mouseover');
+        addEvents(cardContainers, 'js/assets/question.png', 'mouseout');
     }
     //add mouseover/mouseout events to all selected elements
     function addEvents(cardContainers, imgPath, listenerType){
-        cardContainers.forEach((cc) => {
-            let card = cc;
-            //create listener which will call function change the image
-            let listener = function (event) {
-                let cardImg = card.querySelector(".card .card-img-top");
-                changeImage(cardImg, imgPath);
-            };
-            cc.addEventListener(listenerType, listener);
-        });
+        (cardContainers).hover(
+            function (){
+                changeImage($(this), 'js/assets/jazz-music-rubber-duck.jpg');
+            },
+            function (){
+                changeImage($(this), 'js/assets/question.png');
+            }
+        )
+
+
     }
     //actual function to swap images
     function changeImage(card, imgPath){
-        card.setAttribute('src', imgPath);
+      $(card).find('img').attr('src', imgPath);
     }
 
 })();
