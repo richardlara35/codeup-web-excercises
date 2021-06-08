@@ -74,17 +74,17 @@
 //  -> Now, when a user hovers over one of the .col-md-3 containers, you should replace the text inside #card-title with the data-attribute value
 //  -> When the user hovers out, the data-attribute value should be replaced with the original text ("Card")
     $(document).ready(function () {
-        let hoverIn = function () {
-            let attributeValue = $(this).attr("data-attribute");
-            $(this).find(".card-title").text(attributeValue);
-            console.log(attributeValue);
-        }
-
-        let hoverOut = function () {
-            $(this).find(".card-title").text("Card");
-        }
-
-        $('.col-md-3').hover(hoverIn, hoverOut);
+        // let hoverIn = function () {
+        //     let attributeValue = $(this).attr("data-attribute");
+        //     $(this).find(".card-title").text(attributeValue);
+        //     console.log(attributeValue);
+        // }
+        //
+        // let hoverOut = function () {
+        //     $(this).find(".card-title").text("Card");
+        // }
+        //
+        // $('.col-md-3').hover(hoverIn, hoverOut);
 
 
 // TODO: When an li with the .list-group-item class is clicked, replace the text with the same text, but uppercased
@@ -110,10 +110,10 @@
         //
         // )
 
-        $(".list-group-item").click(function(e){
-            $(this).css('text-transform', 'uppercase');
-            $(this).toggleClass('cssStuff');
-        })
+        // $(".list-group-item").click(function(e){
+        //     $(this).css('text-transform', 'uppercase');
+        //     $(this).toggleClass('cssStuff');
+        // })
 
 
 
@@ -124,11 +124,38 @@
 //  -> When the user clicks #submitBtn, redirect the page to the value of #redirect-url
 //  -> HINT: You can either add a new input or change the id of an existing input element to #redirect-url to save time
 
-        $('#submitBtn').click(function(){
-        let newSite = $('#redirect-url').val();
-        window.location.assign(newSite);
+        // $('#submitBtn').click(function(){
+        // let newSite = $('#redirect-url').val();
+        // window.location.assign(newSite);
+        //
+        // })
 
+        // TODO: When the user clicks #submitBtn, log to the console the values of #first, #last, and #handleField
+//  -> If any of the fields are empty, alert the user to fill the empty control (be sure to tell them which control was empty)
+
+        // $('#submitBtn').click(function(){
+        //     console.log($('.firstName').val())
+        //     console.log($('.lastName').val())
+        //     console.log($('.handle').val())
+        // })
+
+
+        $('#submitBtn').click(function(){
+            if ($('.firstName').val() === "" || $('.lastName').val() === "" || $('.handle').val() === ""){
+                alert("No")
+            } else{
+                let person = {
+                    firstName: $('.firstName').val(),
+                    lastName : $('.lastName').val(),
+                    handle : $('.handle').val(),
+                }
+                console.log(person);
+            }
         })
+
+
+
+
 
     })
 
